@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Play</title>
+		<meta name="description" content="Template by Creative Pixel"/>
+		<meta name="keywords" content="HTML, CSS, JavaScript, PHP, Template"/>
+		<meta name="author" content="Siyamak45"/>
+		<!-- Mobile Specific Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<!-- Basic Page Needs  -->
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<!-- CSS -->		
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/YTPlayer.css" />
+		<link rel="stylesheet" type="text/css" href="css/jplayer.pink.flag.css" />
+		<link rel="stylesheet" type="text/css" href="css/SplitLayout.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate.css" />
+		<link rel="stylesheet" type="text/css" href="css/imagelightbox.css" />
+		<link rel="stylesheet" type="text/css" href="css/gallery.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<!-- Modernizr -->
+		<script src="js/modernizr.min.js"></script>
+	</head>
+	<body>
+		<!-- PreLoader -->
+		<div class="preloader" data-bg-color=" rgba(241, 85, 110, 1) ">
+			<div class="container">
+				<img alt="loading" src="images/loading-bars.svg" width="64" />
+			</div>
+		</div>
+		<!-- /PreLoader -->
+		<div class="sp-body">
+			<div class="body">
+				<!-- Navigation Menu -->
+				<div id="navigation" class="navbar dark navbar-default navbar-fixed-top " role="navigation">
+					<div class="navbar-inner">
+						<div class="next btn"><i class="fa fa-long-arrow-right"></i></div>
+						<div class="prev btn"><i class="fa fa-long-arrow-left"></i></div>
+						<div class="menubar btn"><i class="fa fa-bars"></i></div>
+						<div class="logo-alt">
+							<a href="#"><img src="images/logo-mini.svg" alt="logo-mini"></a>
+						</div>
+					</div>
+				</div>
+				<div class="vmenu-wrapper">
+					<nav class="vmenu dark">
+						<div id="rt-menu-wrapper">
+							<!-- Sidebar Logo -->
+							<div class="logo-box">
+								<img src="images/logo.svg" alt="logo" width="170" id="logo-image">
+							</div>
+							<!-- /Sidebar Logo -->
+							<input type="text" class="form-control" placeholder="Search...">
+							<div class="clean">
+								<ul id="accordion" class="menu">
+									<li>
+										<a href="#">Home</a>
+										<!-- Sub Navigation -->
+										<ul>
+											<li><a href="index.html#main/intro">Default Homepage</a></li>
+											<li><a href="index-slideshow.html#main/intro" >Slideshow Homepage</a></li>
+											<li><a href="index-portfolio.html#main/intro">Portfolio Homepage</a></li>
+											<li><a href="index-video.html#main/intro">Video Homepage</a></li>
+										</ul>
+										<!-- /Sub Navigation -->
+									</li>
+									<li><a href="index.html#main/events">Events</a></li>
+									<li>
+										<a href="#">Works</a>
+										<!-- Sub Navigation -->
+										<ul>
+											<li><a href="index.html#main/albums" >Albums</a></li>
+											<li><a href="index.html#main/playlist" >Playlist</a></li>
+											<li><a href="filterable-portfolio.html">Filterable Portfolio</a></li>
+										</ul>
+										<!-- /Sub Navigation -->
+									</li>
+									<li>
+										<a href="index.html#main/about">About</a>
+									</li>
+									<li>
+										<a href="#" >Blog</a>
+										<!-- Sub Navigation -->
+										<ul>
+											<li><a href="index.html#main/blog" >Blog List</a></li>
+											<li><a href="blog-sidebar.html" >Blog List Sidebar</a></li>
+											<li><a href="single-blog-sidebar.html" >Single Post Sidebar</a></li>
+											<li><a href="single-blog-fullwidth.html" >Single Post Fullwidth</a></li>
+										</ul>
+										<!-- /Sub Navigation -->
+									</li>
+									<li>
+										<a href="index.html#main/contact" >Contacts</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+				</div>
+				<!-- /Navigation Menu -->
+				<div class="site-overlay"></div>
+				<!-- Main SECTION -->	
+				<div class="section active">
+
+						
+						<!-- Portfolio Filter -->
+						<ul class="text-center nav nav-pills sort-source portfolio" id="filter">
+							<li ><a href="#main/portfolio" data-filter="*" class="selected">All</a></li>
+							<li ><a href="#main/portfolio" data-filter=".identity" >Identity</a></li>
+							<li ><a href="#main/portfolio" data-filter=".illustration" class="">Illustration</a></li>
+							<li ><a href="#main/portfolio" data-filter=".motion" class="">Motion</a></li>
+							<li ><a href="#main/portfolio" data-filter=".presentation" class="">Presentation</a></li>
+							<li ><a href="#main/portfolio" data-filter=".print" class="">Print</a></li>
+							
+						</ul>
+						<!-- /Portfolio Filter -->
+						<!-- Portfolio -->
+						<div class="clearfix portfolio-wrapper">
+							<div id="portfolio-holder" class="clearfix">
+								<!-- Three Column Portfolio Container-->
+								<ul id="portfolio" class="cols-three">
+									<!-- Portfolio Item -->
+									<li class="item hover-image-holder illustration" data-factor="2" >
+										<a href="single-portfolio.html">
+											<img  src="images/portfolio/1.jpg"  width="550" height="412" alt="Crew Neck">
+											<div class="caption">
+												<div>
+													<div>
+														<h3>Flat or Die Hoodie</h3>
+														<span class="category">Category: Identity, Web Development</span>
+														<span class="excerpt">If you need another skull in your clothing lineup you're in luck.</span>
+													</div>
+												</div>
+											</div>
+										</a>
+									</li>
+									<!-- Portfolio Item -->
+									<li class="item hover-image-holder identity web-development" data-factor="1" >
+										<a href="single-portfolio.html">
+											<img  src="images/portfolio/2.jpg"  width="550" height="412" alt="Crew Neck">
+											<div class="caption">
+												<div>
+													<div>
+														<h3>Sidecar Stickers</h3>
+														<span class="category">Category: Identity, Web Development</span>
+														<span class="excerpt">The new stickers are in and will be traveling to Creative South 2015 next week and potentially Peers Conf at the end of the month.</span>
+													</div>
+												</div>
+											</div>
+										</a>
+									</li>
+									<!-- Portfolio Item -->
+									<li class="item hover-image-holder web-development" data-factor="1" >
+										<a href="single-portfolio.html">
+											<img  src="images/portfolio/4.jpg" width="550" height="412" alt="Basic Stationery">
+											<div class="caption">
+												<div>
+													<div>
+														<h3>We're Hiring</h3>
+														<span class="category">Category: Web Development</span>
+														<span class="excerpt">We are looking to add some great new team members to the Focus Lab family for a couple different positions.</span>
+													</div>
+												</div>
+											</div>
+										</a>
+									</li>
+									<!-- Portfolio Item -->
+									<li class="item hover-image-holder identity" data-factor="1" >
+										<a href="single-portfolio.html">
+											<img  src="images/portfolio/5.jpg" width="432" height="281" alt="Eco Bags">
+											<div class="caption">
+												<div>
+													<div>
+														<h3>New Thing Coming...</h3>
+														<span class="category">Category: Identity</span>
+														<span class="excerpt">We are cooking something up at Focus Lab that will be launching next month.</span>
+													</div>
+												</div>
+											</div>
+										</a>
+									</li>
+									<!-- Portfolio Item -->
+									<li class="item hover-image-holder motion print" data-factor="1" >
+										<a href="single-portfolio.html">
+											<img  src="images/portfolio/6.jpg" width="432" height="281" alt="Art Equipment">
+											<div class="caption">
+												<div>
+													<div>
+														<h3>It's Coming....</h3>
+														<span class="category">Category: Motion, Print</span>
+														<span class="excerpt">We are working hard behind the scenes right now to bring you all something I know you will like.</span>
+													</div>
+												</div>
+											</div>
+										</a>
+									</li>
+									<!-- Portfolio Item -->
+									<li class="item hover-image-holder illustration presentation" data-factor="1" >
+										<a href="single-portfolio.html">
+											<img  src="images/portfolio/7.jpg" width="864" height="562" alt="Shadow">
+											<div class="caption">
+												<div>
+													<div>
+														<h3>Circles Conference</h3>
+														<span class="category">Category: Illustration, Presentation</span>
+														<span class="excerpt">So we are excited to finally see the new Circles Conference site live!</span>
+													</div>
+												</div>
+											</div>
+										</a>
+									</li>
+									<!-- Portfolio Item -->
+									<li class="item hover-image-holder identity web-development" data-factor="1" >
+										<a href="single-portfolio.html">
+											<img  src="images/portfolio/8.jpg" width="432" height="562" alt="Nice Video">
+											<div class="caption">
+												<div>
+													<div>
+														<h3>Lost Red Chicken</h3>
+														<span class="category">Category: Identity, Web Development</span>
+														<span class="excerpt">Woking on a fun little craft beer thang. It's super early so don't get all crazy on me for imperfect pixels.</span>
+													</div>
+												</div>
+											</div>
+										</a>
+									</li>
+									<!-- Portfolio Item -->
+									<li class="item hover-image-holder identity" data-factor="1" >
+										<a href="single-portfolio.html">
+											<img  src="images/portfolio/9.jpg" width="432" height="281" alt="Simple Badges">
+											<div class="caption">
+												<div>
+													<div>
+														<h3>Assembly</h3>
+														<span class="category">Category: Identity</span>
+														<span class="excerpt">Continuing to evolve the assets and execution of the new branding we are putting in place for https://assembly.com/discover</span>
+													</div>
+												</div>
+											</div>
+										</a>
+									</li>
+									<!-- Portfolio Item -->
+									<li class="item hover-image-holder print" data-factor="1">
+										<a href="single-portfolio.html">
+											<img  src="images/portfolio/10.jpg" width="432" height="562" alt="Artist Assets">
+											<div class="caption">
+												<div>
+													<div>
+														<h3>Assembly Landing</h3>
+														<span class="category">Category: Print</span>
+														<span class="excerpt">Really happy with how the Assembly brand and homepage came together.</span>
+													</div>
+												</div>
+											</div>
+										</a>
+									</li>
+									<!-- Portfolio Item -->
+									<li class="item hover-image-holder web-development" data-factor="1" >
+										<a href="single-portfolio.html">
+											<img  src="images/portfolio/11.jpg" width="432" height="281" alt="Novi">
+											<div class="caption">
+												<div>
+													<div>
+														<h3>Meet June</h3>
+														<span class="category">Category: Web Development</span>
+														<span class="excerpt">Working on another great project with Summer Teal Simpson and Jonathan Howell.</span>
+													</div>
+												</div>
+											</div>
+										</a>
+									</li>
+									<!-- Portfolio Item -->
+									<li class="item hover-image-holder motion" data-factor="1">
+										<a href="single-portfolio.html">
+											<img  src="images/portfolio/12.jpg" width="432" height="562" alt="Brand Board">
+											<div class="caption">
+												<div>
+													<div>
+														<h3>YeeHaw</h3>
+														<span class="category">Category: Motion</span>
+														<span class="excerpt">Thanks to the inspiration of heymonkeydesign I am starting a tradition of making a fun secret drawing for my son's lunch box every Monday.</span>
+													</div>
+												</div>
+											</div>
+										</a>
+									</li>
+									<!-- Portfolio Item -->
+									<li class="item hover-image-holder motion" data-factor="1">
+										<a href="single-portfolio.html">
+											<img  src="images/portfolio/3.jpg" width="432" height="562" alt="Brand Board">
+											<div class="caption">
+												<div>
+													<div>
+														<h3>Branding Chop</h3>
+														<span class="category">Category: Motion</span>
+														<span class="excerpt">This branding project would not have been complete without a proper seal a.k.a "Chop".</span>
+													</div>
+												</div>
+											</div>
+										</a>
+									</li>
+								</ul>
+								<!-- /Three Column Portfolio Container-->
+							</div>
+						</div>
+						<!-- /Portfolio -->
+					
+				</div>
+				<!-- /Main SECTION -->	
+			</div>
+		</div>
+		<!-- Scripts -->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>	
+		<script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+		<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+		<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+		<script type="text/javascript" src="js/jquery.countdown.min.js"></script>	
+		<script type="text/javascript" src="js/jquery.mb.YTPlayer.js"></script>
+		<script type="text/javascript" src="js/classie.js"></script>
+		<script type="text/javascript" src="js/tweetie.min.js"></script>
+		<script type="text/javascript" src="js/cbpSplitLayout.js"></script>
+		<script type="text/javascript" src="js/EasePack.min.js"></script>
+		<script type="text/javascript" src="js/jplayer.playlist.min.js"></script>
+		<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+		<script type="text/javascript" src="js/jquery.parallaxify.min.js"></script>
+		<script type="text/javascript" src="js/imagelightbox.min.js"></script>
+		<script type="text/javascript" src="js/jquery.dcjqaccordion.2.7.min.js"></script>
+		<script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+		<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+		<script type="text/javascript" src="js/imgLiquid-min.js"></script>
+		<script type="text/javascript" src="js/photostack.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/custom.js"></script>
+		<script  type="text/javascript">
+			$(window).load(function(){
+				$(".imgLiquid").imgLiquid();
+				$('.preloader').fadeOut(1000);
+			}); 
+		</script>
+	</body>
+</html>

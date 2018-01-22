@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Play</title>
+		<meta name="description" content="Template by Creative Pixel"/>
+		<meta name="keywords" content="HTML, CSS, JavaScript, PHP, Template"/>
+		<meta name="author" content="Siyamak45"/>
+		<!-- Mobile Specific Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<!-- Basic Page Needs  -->
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<!-- CSS -->		
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/YTPlayer.css" />
+		<link rel="stylesheet" type="text/css" href="css/jplayer.pink.flag.css" />
+		<link rel="stylesheet" type="text/css" href="css/SplitLayout.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate.css" />
+		<link rel="stylesheet" type="text/css" href="css/imagelightbox.css" />
+		<link rel="stylesheet" type="text/css" href="css/gallery.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<!-- Modernizr -->
+		<script src="js/modernizr.min.js"></script>
+	</head>
+	<body>
+		<!-- PreLoader -->
+		<div class="preloader" data-bg-color=" rgba(241, 85, 110, 1) ">
+			<div class="container">
+				<img alt="loading" src="images/loading-bars.svg" width="64" />
+			</div>
+		</div>
+		<!-- /PreLoader -->
+		<div class="sp-body">
+			<div class="body">
+				<!-- Navigation Menu -->
+				<div id="navigation" class="navbar dark navbar-default navbar-fixed-top " role="navigation">
+					<div class="navbar-inner">
+						<div class="next btn"><i class="fa fa-long-arrow-right"></i></div>
+						<div class="prev btn"><i class="fa fa-long-arrow-left"></i></div>
+						<div class="menubar btn"><i class="fa fa-bars"></i></div>
+						<div class="logo-alt">
+							<a href="http://skripter.info/"><img src="images/logo-mini.svg" alt="logo-mini"></a>
+						</div>
+					</div>
+				</div>
+				<div class="vmenu-wrapper">
+					<nav class="vmenu dark">
+						<div id="rt-menu-wrapper">
+							<!-- Sidebar Logo -->
+							<div class="logo-box">
+								<img src="images/logo.svg" alt="logo" width="170" id="logo-image">
+							</div>
+							<!-- /Sidebar Logo -->
+							<input type="text" class="form-control" placeholder="Search...">
+							<div class="clean">
+								<ul id="accordion" class="menu">
+									<li>
+										<a href="#main/intro">Home</a>
+										<!-- Sub Navigation -->
+										<ul>
+											<li><a href="index.html#main/intro">Default Homepage</a></li>
+											<li><a href="index-slideshow.html#main/intro" >Slideshow Homepage</a></li>
+											<li><a href="index-portfolio.html#main/intro">Portfolio Homepage</a></li>
+											<li><a href="index-video.html#main/intro">Video Homepage</a></li>
+										</ul>
+										<!-- /Sub Navigation -->
+									</li>
+									<li><a href="#main/events">Events</a></li>
+									<li>
+										<a href="#">Works</a>
+										<!-- Sub Navigation -->
+										<ul>
+											<li><a href="#main/albums" >Albums</a></li>
+											<li><a href="#main/playlist" >Playlist</a></li>
+											<li><a href="filterable-portfolio.html">Filterable Portfolio</a></li>
+										</ul>
+										<!-- /Sub Navigation -->
+									</li>
+									<li>
+										<a href="#main/about">About</a>
+									</li>
+									<li>
+										<a href="#" >Blog</a>
+										<!-- Sub Navigation -->
+										<ul>
+											<li><a href="#main/blog" >Blog List</a></li>
+											<li><a href="blog-sidebar.html" >Blog List Sidebar</a></li>
+											<li><a href="single-blog-sidebar.html" >Single Post Sidebar</a></li>
+											<li><a href="single-blog-fullwidth.html" >Single Post Fullwidth</a></li>
+										</ul>
+										<!-- /Sub Navigation -->
+									</li>
+									<li>
+										<a href="#main/contact" >Contacts</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+				</div>
+				<!-- /Navigation Menu -->
+				<div class="site-overlay"></div>
+				<!-- Main SECTION -->	
+				<div class="section active">
+					<!-- Playlist SLIDE -->
+					<div class="slide imgLiquid" data-anchor="playlist" id="playlist">
+						<!-- Slide Background Image -->
+						<img alt="image" src="images/album-bg.jpg" />
+						<!-- /Slide Background Image -->
+						<!-- Playlist Description -->
+						<div class="content-wrapper fixed left">
+							<div class="fullheight fullwidth vcenter-wrapper" >
+								<div class="vcenter-container" >
+									<div class=" fullheight" >
+										<div class="box-wrapper " data-bg-color="#FFF">
+											<div class="box-info">
+												<h2 class="heading">Featured Playlist</h2>
+												<ul class="list-unstyled">
+													<li>
+														<strong>Title:</strong>
+														 Fresh Hits
+													</li>
+													<li>
+														<strong>Created by:</strong>
+														 Creative	
+													</li>
+													<li>
+														<strong>Songs:</strong>
+														 13                              
+													</li>
+												</ul>
+											</div>
+										</div>	
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /Playlist Description -->
+						<!-- Player -->
+						<div class="content-wrapper right" >
+							<div class="content-container">
+								<div id="jquery_jplayer" class="jp-jplayer"></div>
+								<div id="jp_container" class="jp-audio" role="application" aria-label="media player">
+									<div class="jp-type-playlist">
+										<div class="jp-gui jp-interface">
+											<div class="jp-controls">
+												<button class="jp-previous" role="button" tabindex="0">previous</button>
+												<button class="jp-play" role="button" tabindex="0">play</button>
+												<button class="jp-next" role="button" tabindex="0">next</button>
+												<button class="jp-stop" role="button" tabindex="0">stop</button>
+											</div>
+											<div class="jp-progress">
+												<div class="jp-seek-bar">
+													<div class="jp-play-bar"></div>
+												</div>
+											</div>
+											<div class="jp-volume-controls">
+												<button class="jp-mute" role="button" tabindex="0">mute</button>
+												<button class="jp-volume-max" role="button" tabindex="0">max volume</button>
+												<div class="jp-volume-bar">
+													<div class="jp-volume-bar-value"></div>
+												</div>
+											</div>
+											<div class="jp-time-holder">
+												<div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+												<div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+											</div>
+											<div class="jp-toggles">
+												<button class="jp-repeat" role="button" tabindex="0">repeat</button>
+												<button class="jp-shuffle" role="button" tabindex="0">shuffle</button>
+											</div>
+										</div>
+										<div class="jp-playlist">
+											<ul>
+												<li>&nbsp;</li>
+											</ul>
+										</div>
+										<!-- FlashPlayer Fallback-->
+										<div class="jp-no-solution">
+											<span>Update Required</span>
+											To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+										</div>
+										<!-- /FlashPlayer Fallback-->
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Player -->
+					</div>
+					<!-- /Playlist SLIDE -->
+					<!-- Intro SLIDE -->
+					<div class="slide active" data-anchor="intro" id="intro">
+						<div class="intro fullheight ">
+							<!-- Parallax -->
+							<div class="parallax-wrapper fullheight fullwidth"   >
+								<div class="parallax-container imgLiquid fullheight fullwidth" >
+									<img src="images/parallax-bg1.jpg" alt="Parallax Background"/>
+									<!-- Parallax Layer 1 -->
+									<div class="parallax-item imgLiquid" data-parallaxify-range-y="0"  data-parallaxify-range-x="100">
+										<img src="images/Parallax-L1.png" alt="Parallax Layer"/>
+									</div>
+									<!-- /Parallax Layer 1 -->
+									<!-- Parallax Layer 2 -->
+									<div class="parallax-item imgLiquid" data-parallaxify-range-y="0"  data-parallaxify-range-x="-50">
+										<img src="images/Parallax-L2.png" alt="Parallax Layer"/>
+									</div>	
+									<!-- /Parallax Layer 2 -->
+									<div class="slideshow-item-content ">
+										<div class="text-shadow countdown_dashboard bold" data-date="2015/12/12"></div>
+										<p class="text-shadow">CONTEMPORARY MUSIC OF LIVING COMPOSERS</p>
+										<a class="button white transparent large" href="#">Discover More</a>
+										<a class="button red large" href="#">Buy Ticket</a>
+									</div>		
+								</div>	
+							</div>	
+							<!-- /Parallax -->
+						</div>
+					</div>
+					<!-- /Intro SLIDE -->		
+					<!-- Albums SLIDE -->		
+					<div class="slide" data-anchor="albums" id="albums" >
+						<div class="album-list-wrap ">
+							<!-- Album Item -->
+							<div class="col-lg-3 col-md-4 col-sm-4 album-card-wrap nopadding ">
+								<div class="album-card">
+									<div class="image hoverdir-target">
+										<img alt="image" src="images/album1.jpg">
+										<div class="overlay" >
+											<div class="button-wrapper" >
+												<div class="view-button" >
+													<a class="link" href="single-album.html">
+													<span><strong class="bold">View</strong><br>Album</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="text">
+										<a href="single-album.html">
+											<div class="title">
+												<h4>Hezaro Yek Shab</h4>
+											</div>
+										</a>
+										<div class="year"><span> 2012</span></div>
+									</div>
+								</div>
+							</div>
+							<!-- Album Item -->
+							<div class="col-lg-3 col-md-4 col-sm-4 album-card-wrap nopadding ">
+								<div class="album-card">
+									<div class="image hoverdir-target">
+										<img alt="image" src="images/album2.jpg" >
+										<div class="overlay" >
+											<div class="button-wrapper" >
+												<div class="view-button" >
+													<a class="link" href="single-album.html">
+													<span><strong class="bold">View</strong><br>Album</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="text">
+										<a href="single-album.html">
+											<div class="title">
+												<h4>Khiyaboona</h4>
+											</div>
+										</a>
+										<div class="year"><span> 2010</span></div>
+									</div>
+								</div>
+							</div>
+							<!-- Album Item -->
+							<div class="col-lg-3 col-md-4 col-sm-4 album-card-wrap nopadding ">
+								<div class="album-card">
+									<div class="image hoverdir-target">
+										<img alt="image" src="images/album3.jpg" >
+										<div class="overlay" >
+											<div class="button-wrapper" >
+												<div class="view-button" >
+													<a class="link" href="single-album.html">
+													<span><strong class="bold">View</strong><br>Album</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="text">
+										<a href="single-album.html">
+											<div class="title">
+												<h4>Darke</h4>
+											</div>
+										</a>
+										<div class="year"><span> 2011</span></div>
+									</div>
+								</div>
+							</div>
+							<!-- Album Item -->
+							<div class="col-lg-3 col-md-4 col-sm-4 album-card-wrap nopadding ">
+								<div class="album-card">
+									<div class="image hoverdir-target">
+										<img alt="image" src="images/album4.jpg" >
+										<div class="overlay" >
+											<div class="button-wrapper" >
+												<div class="view-button" >
+													<a class="link" href="single-album.html">
+													<span><strong class="bold">View</strong><br>Album</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="text">
+										<a href="single-album.html">
+											<div class="title">
+												<h4>Velgard</h4>
+											</div>
+										</a>
+										<div class="year"><span> 2013</span></div>
+									</div>
+								</div>
+							</div>
+							<!-- Album Item -->
+							<div class="col-lg-3 col-md-4 col-sm-4 album-card-wrap nopadding ">
+								<div class="album-card">
+									<div class="image hoverdir-target">
+										<img alt="image" src="images/album5.jpg" >
+										<div class="overlay" >
+											<div class="button-wrapper" >
+												<div class="view-button" >
+													<a class="link" href="single-album.html">
+													<span><strong class="bold">View</strong><br>Album</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="text">
+										<a href="single-album.html">
+											<div class="title">
+												<h4>Playback</h4>
+											</div>
+										</a>
+										<div class="year"><span> 2012</span></div>
+									</div>
+								</div>
+							</div>
+							<!-- Album Item -->
+							<div class="col-lg-3 col-md-4 col-sm-4 album-card-wrap nopadding ">
+								<div class="album-card">
+									<div class="image hoverdir-target">
+										<img alt="image" src="images/album6.jpg" >
+										<div class="overlay" >
+											<div class="button-wrapper" >
+												<div class="view-button" >
+													<a class="link" href="single-album.html">
+													<span><strong class="bold">View</strong><br>Album</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="text">
+										<a href="single-album.html">
+											<div class="title">
+												<h4>Maroon</h4>
+											</div>
+										</a>
+										<div class="year"><span> 2011</span></div>
+									</div>
+								</div>
+							</div>
+							<!-- Album Item -->
+							<div class="col-lg-3 col-md-4 col-sm-4 album-card-wrap nopadding ">
+								<div class="album-card">
+									<div class="image hoverdir-target">
+										<img alt="image" src="images/album7.jpg" >
+										<div class="overlay" >
+											<div class="button-wrapper" >
+												<div class="view-button" >
+													<a class="link" href="single-album.html">
+													<span><strong class="bold">View</strong><br>Album</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="text">
+										<a href="single-album.html">
+											<div class="title">
+												<h4>New Year Remix</h4>
+											</div>
+										</a>
+										<div class="year"><span> 2015</span></div>
+									</div>
+								</div>
+							</div>
+							<!-- Album Item -->
+							<div class="col-lg-3 col-md-4 col-sm-4 album-card-wrap nopadding ">
+								<div class="album-card">
+									<div class="image hoverdir-target">
+										<img alt="image" src="images/album8.jpg" >
+										<div class="overlay" >
+											<div class="button-wrapper" >
+												<div class="view-button" >
+													<a class="link" href="single-album.html">
+													<span><strong class="bold">View</strong><br>Album</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="text">
+										<a href="single-album.html">
+											<div class="title">
+												<h4>Deep Ways</h4>
+											</div>
+										</a>
+										<div class="year"><span> 2015</span></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Albums SLIDE -->
+					<!-- About SLIDE -->
+					<div class="slide" data-anchor="about" id="about">
+						<div class="split-container">
+							<div id="splitlayout" class="splitlayout">
+								<!-- Splitlayout Menu -->
+								<div class="intro">
+									<div class="side side-left">
+										<div class="intro-content">
+											<div class="profile">
+												<h2 class="section-title double-title center">
+													<span>Awesome</span>Photos
+												</h2>
+											</div>
+										</div>
+										<div class="overlay"></div>
+									</div>
+									<div class="side side-right">
+										<div class="intro-content">
+											<div class="profile">
+												<h2 class="section-title double-title center">
+													<span>Meet</span>PERFORMERS
+												</h2>
+											</div>
+										</div>
+										<div class="overlay"></div>
+									</div>
+								</div>
+								<!-- /Splitlayout Menu -->
+								<!-- Splitlayout Right Page -->
+								<div class="page page-right">
+									<!-- page-inner -->
+									<div class="page-inner">
+										<!-- Team Members -->
+										<div class="teamlist">
+											<div class="col-md-6 team-item nopadding">
+												<div class="team_member_wrap">
+													<a href="single-member.html">
+														<div class="team_profile_wrap" >
+															<div class="team_profile_pic imgLiquid">
+																<img alt="image" src="images/team-member-4.jpg" />
+															</div>
+															<div class="team_profile_ttl" >
+																<h3>JONH DOE</h3>
+																<h4>Drum</h4>
+															</div>
+														</div>
+													</a>	
+												</div>
+											</div>
+											<div class="col-md-6 team-item nopadding">
+												<div class="team_member_wrap">
+													<a href="single-member.html">
+														<div class="team_profile_wrap" >
+															<div class="team_profile_pic  imgLiquid">
+																<img alt="image" src="images/team-member-5.jpg" />
+															</div>
+															<div class="team_profile_ttl" >
+																<h3>Scott Sanchezh</h3>
+																<h4>Drum</h4>
+
+															</div>
+														</div>
+													</a>	
+												</div>
+											</div>
+											<div class="col-md-6 team-item nopadding">
+												<div class="team_member_wrap">
+													<a href="single-member.html">
+														<div class="team_profile_wrap" >
+															<div class="team_profile_pic imgLiquid">
+																<img alt="image" src="images/team-member-3.jpg" />
+															</div>
+															<div class="team_profile_ttl" >
+																<h3>Michelle White</h3>
+																<h4>Base Guitar</h4>
+
+															</div>
+														</div>
+													</a>	
+												</div>
+											</div>
+											<div class="col-md-6 team-item nopadding">
+												<div class="team_member_wrap">
+													<a href="single-member.html">
+														<div class="team_profile_wrap" >
+															<div class="team_profile_pic imgLiquid">
+																<img alt="image" src="images/team-member-2.jpg" />
+															</div>
+															<div class="team_profile_ttl" >
+																<h3>Henry kolms</h3>
+																<h4>Rythm Guitar</h4>
+															</div>
+														</div>
+													</a>	
+												</div>
+											</div>
+											<div class="col-md-6 team-item nopadding">
+												<div class="team_member_wrap">
+													<a href="single-member.html">
+														<div class="team_profile_wrap" >
+															<div class="team_profile_pic imgLiquid">
+																<img alt="image" src="images/team-member-1.jpg" />
+															</div>
+															<div class="team_profile_ttl" >
+																<h3>Marc Crow</h3>
+																<h4>Vocal</h4>
+
+															</div>
+														</div>
+													</a>	
+												</div>
+											</div>
+										</div>
+										<!-- /Team Members -->
+									</div>
+									<!-- /page-inner -->
+								</div>
+								<!-- /Splitlayout Right Page -->
+								<!-- Splitlayout Left Page -->
+								<div class="page page-left">
+									<!-- Page-inner -->
+									<div class="page-inner">
+										<!-- Polaroid Photo Gallery -->
+										<section id="photostack" class="show photostack">
+											<div>
+												<figure>
+													<a href="images/5.jpg" data-imagelightbox="gallery" class="photostack-img"><img src="images/5.jpg" alt="img05"/></a>
+													<figcaption>
+														<h2 class="photostack-title">Speed Racer</h2>
+													</figcaption>
+												</figure>
+												<figure>
+													<a href="images/2.jpg" data-imagelightbox="gallery" class="photostack-img"><img src="images/2.jpg" alt="img02"/></a>
+													<figcaption>
+														<h2 class="photostack-title">Happy Days</h2>
+													</figcaption>
+												</figure>
+												<figure>
+													<a href="images/3.jpg" data-imagelightbox="gallery" class="photostack-img"><img src="images/3.jpg" alt="img03"/></a>
+													<figcaption>
+														<h2 class="photostack-title">Beautywood</h2>
+													</figcaption>
+												</figure>
+												<figure>
+													<a href="images/1.jpg" data-imagelightbox="gallery" class="photostack-img"><img src="images/1.jpg" alt="img01"/></a>
+													<figcaption>
+														<h2 class="photostack-title">Serenity Beach</h2>
+													</figcaption>
+												</figure>
+												<figure>
+													<a href="images/4.jpg" data-imagelightbox="gallery" class="photostack-img"><img src="images/4.jpg" alt="img04"/></a>
+													<figcaption>
+														<h2 class="photostack-title">Heaven of time</h2>
+													</figcaption>
+												</figure>
+												<figure>
+													<a href="images/6.jpg"  data-imagelightbox="gallery" class="photostack-img"><img src="images/6.jpg" alt="img06"/></a>
+													<figcaption>
+														<h2 class="photostack-title">Forever this</h2>
+													</figcaption>
+												</figure>
+												<figure data-dummy>
+													<a href="#" class="photostack-img"><img src="images/7.jpg" alt="img07"/></a>
+													<figcaption>
+														<h2 class="photostack-title">Lovely Green</h2>
+													</figcaption>
+												</figure>
+												<figure data-dummy>
+													<a href="#" class="photostack-img"><img src="images/8.jpg" alt="img08"/></a>
+													<figcaption>
+														<h2 class="photostack-title">Wonderful</h2>
+													</figcaption>
+												</figure>
+												<figure data-dummy>
+													<a href="#" class="photostack-img"><img src="images/9.jpg" alt="img09"/></a>
+													<figcaption>
+														<h2 class="photostack-title">Love Addict</h2>
+													</figcaption>
+												</figure>
+												<figure data-dummy>
+													<a href="#" class="photostack-img"><img src="images/10.jpg" alt="img10"/></a>
+													<figcaption>
+														<h2 class="photostack-title">Friendship</h2>
+													</figcaption>
+												</figure>
+												<figure data-dummy>
+													<a href="#" class="photostack-img"><img src="images/11.jpg" alt="img11"/></a>
+													<figcaption>
+														<h2 class="photostack-title">White Nights</h2>
+													</figcaption>
+												</figure>
+												<figure data-dummy>
+													<a href="#" class="photostack-img"><img src="images/12.jpg" alt="img12"/></a>
+													<figcaption>
+														<h2 class="photostack-title">Serendipity</h2>
+													</figcaption>
+												</figure>
+												<figure data-dummy>
+													<a href="#" class="photostack-img"><img src="images/13.jpg" alt="img13"/></a>
+													<figcaption>
+														<h2 class="photostack-title">Pure Soul</h2>
+													</figcaption>
+												</figure>
+												<figure data-dummy>
+													<a href="#" class="photostack-img"><img src="images/14.jpg" alt="img14"/></a>
+													<figcaption>
+														<h2 class="photostack-title">Winds of Peace</h2>
+													</figcaption>
+												</figure>
+												<figure data-dummy>
+													<a href="#" class="photostack-img"><img src="images/15.jpg" alt="img15"/></a>
+													<figcaption>
+														<h2 class="photostack-title">Shades of blue</h2>
+													</figcaption>
+												</figure>
+												<figure data-dummy>
+													<a href="#" class="photostack-img"><img src="images/16.jpg" alt="img16"/></a>
+													<figcaption>
+														<h2 class="photostack-title">Lightness</h2>
+													</figcaption>
+												</figure>
+											</div>
+										</section>
+										<!-- /Polaroid Photo Gallery -->
+									</div>
+									<!-- /page-inner -->
+								</div>
+								<!-- /Splitlayout Left Page -->
+								<!-- Splitlayout Back Buttons -->
+								<a href="#" class="back back-right" title="back to intro">&rarr;</a>
+								<a href="#" class="back back-left" title="back to intro">&larr;</a>
+								<!-- /Splitlayout Back Buttons -->
+							</div>
+						</div>
+					</div>
+					<!-- /About SLIDE -->		
+					<!-- BLOG SLIDE -->		
+					<div class="slide fullheight" data-anchor="blog" id="blog">
+						<!-- Blog List Side -->	
+						<div class="content-wrapper">
+							<div class="content-container">
+								<div class="blog-wrapper">
+									<!-- Blog Item -->	
+									<div class="blog-item">
+										<a href="single-blog-fullwidth.html" class="hover-image-holder">
+											<img alt="image" src="images/b3.jpg" >
+										</a>
+										<div class="blogContentWrapper">
+											<div class="post-meta">
+												<span><i class="fa fa-user"></i> By <a href="#">John Doe</a> </span>
+												<span><i class="fa fa-tags"></i> <a href="#">Duis</a>, <a href="#">News</a> </span>
+												<span><i class="fa fa-comments"></i> <a href="#">12 Comments</a></span>
+											</div>
+											<h2><a href="blog03.html">Our Happy Friends</a></h2>
+											<p>Egestas porta odio? Elementum, elementum. Elit magna enim facilisis, sed duis. Odio et elementum nascetur, sit diam ultrices nunc, sit sed, eu in! Dolor sit adipiscing penatibus, proin ridiculus aenean turpis nec non cursus magna purus, massa proin, enim?  Sed integer natoque elementum habitasse, pellentesque? Ac mattis mattis aliquam, augue, vel porta sagittis quis, dignissim aeanean eu! </p>
+											<a class="button transparent" href="single-blog-fullwidth.html">Read More</a>
+										</div>
+									</div>
+									<!-- /Blog Item -->	
+									<!-- Blog Item -->	
+									<div class="blog-item">
+										<a href="single-blog-sidebar.html" class="hover-image-holder">
+											<img alt="image" src="images/b2.jpg" >
+										</a>
+										<div class="blogContentWrapper">
+											<div class="post-meta">
+												<span><i class="fa fa-user"></i> By <a href="#">John Doe</a> </span>
+												<span><i class="fa fa-tags"></i> <a href="#">Duis</a>, <a href="#">News</a> </span>
+												<span><i class="fa fa-comments"></i> <a href="#">12 Comments</a></span>
+											</div>
+											<h2><a href="blog03.html">How To Start Big Party?</a></h2>
+											<p>Egestas porta odio? Elementum, elementum. Elit magna enim facilisis, sed duis. Odio et elementum nascetur, sit diam ultrices nunc, sit sed, eu in! Dolor sit adipiscing penatibus, proin ridiculus aenean turpis nec non cursus magna purus, massa proin, enim?  Sed integer natoque elementum habitasse, pellentesque? Ac mattis mattis aliquam, augue, vel porta sagittis quis, dignissim aeanean eu! </p>
+											<a class="button transparent" href="single-blog-sidebar.html">Read More</a>
+										</div>
+									</div>
+									<!-- /Blog Item -->	
+									<!-- Blog Item -->	
+									<div class="blog-item">
+										<a href="single-blog-fullwidth.html" class="hover-image-holder">
+											<img alt="image" src="images/b4.jpg" >
+										</a>					
+										<div class="blogContentWrapper">
+											<div class="post-meta">
+												<span><i class="fa fa-user"></i> By <a href="#">John Doe</a> </span>
+												<span><i class="fa fa-tags"></i> <a href="#">Duis</a>, <a href="#">News</a> </span>
+												<span><i class="fa fa-comments"></i> <a href="#">12 Comments</a></span>
+											</div>
+											<h2><a href="blog03.html">Be Happy With Us</a></h2>
+											<p>Egestas porta odio? Elementum, elementum. Elit magna enim facilisis, sed duis. Odio et elementum nascetur, sit diam ultrices nunc, sit sed, eu in! Dolor sit adipiscing penatibus, proin ridiculus aenean turpis nec non cursus magna purus, massa proin, enim?  Sed integer natoque elementum habitasse, pellentesque? Ac mattis mattis aliquam, augue, vel porta sagittis quis, dignissim aeanean eu! </p>
+											<a class="button transparent" href="single-blog-fullwidth.html">Read More</a>
+										</div>
+									</div>
+									<!-- /Blog Item -->	
+								</div>
+							</div>
+						</div>
+						<!-- /Blog List Side -->	
+						<!-- Twitter Feed Side -->	
+						<div class="content-wrapper fixed right">
+							<div class="fullheight fullwidth vcenter-wrapper" >
+								<div class="fullheight vcenter-container" >
+									<div class=" fullheight imgLiquid" >
+										<!-- Background Image -->	
+										<img alt="image" src="images/slider1.jpg" />
+										<!-- /Background Image -->	
+										<div class="box-wrapper ">
+											<!-- Twitter Feed -->	
+											<blockquote class="twitter-tweet" data-user="s_shahpasand" lang="en"></blockquote>
+											<!-- /Twitter Feed -->	
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /Twitter Feed Side -->	
+					</div>
+					<!-- /Blog SLIDE -->		
+					<!-- Events SLIDE -->		
+					<div class="slide" data-anchor="events" id="events">
+						<div class="fullheight vertical-carousel">
+							<!-- Events Poster Images -->	
+							<div class="content-wrapper ">
+								<div class="content-container navgaition-part fullheight">
+									<div class="fullheight fullwidth vcenter-wrapper" >
+										<div class="vcenter-container fullheight imgLiquid" >
+											<!-- First Event Poster Image -->	
+											<img alt="image" src="images/event-flyer-1.jpg" />
+											<!-- /First Event Poster Image -->	
+										</div>
+									</div>
+									<div class="fullheight fullwidth vcenter-wrapper" >
+										<div class="vcenter-container fullheight imgLiquid" >
+											<!-- Secoend Event Poster Image -->	
+											<img alt="image" src="images/event-flyer-2.jpg" />
+											<!-- /Secoend Event Poster Image -->	
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /Events Poster Images -->	
+							<!-- Events Details -->	
+							<div class="content-wrapper ">
+								<div class="content-container  content-part fullheight">
+									<div class="fullheight  fullwidth vcenter-wrapper" >
+										<div class="vcenter-container"  data-bg-color="#dce1e3" >
+											<!-- First Event Details -->	
+											<div class="item-content" >
+												<div class="item-wrapper vcenter">
+													<h2 class="section-title double-title">
+														<span>Night Party</span>MUSIC LOVE
+													</h2>
+													
+													<p>
+														<strong>Date:</strong>
+														 May 15, 2015
+													</p>
+													<p>
+														<strong>Time:</strong>
+														 11:00 PM
+													</p>
+													<p>
+														<strong>Ticket Price:</strong>
+														 $169
+													</p>
+													<p>
+														<strong>Location:</strong>
+														 31 Great Smith Street, London, United Kingdom
+													</p>
+																									  
+													
+													<p>&nbsp;</p>
+													<a class="button red large" href="#">Buy Ticket</a>
+													<a class="button grey large" href="single-event.html">Discover More</a>
+													
+												</div>
+											</div>
+											<!-- /First Event Details -->	
+										</div>
+									</div>
+									<div class="fullheight  fullwidth vcenter-wrapper" >
+										<div class="vcenter-container"  data-bg-color="#fff" >
+											<!-- Secoend Event Details -->	
+											<div class="item-content" >
+												<div class="item-wrapper vcenter">
+													<h2 class="section-title double-title">
+														<span>Promo Tour</span>ELEGANTO
+													</h2>
+													
+													<p>
+														<strong>Date:</strong>
+														 Oct 28, 2015
+													</p>
+													<p>
+														<strong>Time:</strong>
+														 11:00 PM
+													</p>
+													<p>
+														<strong>Ticket Price:</strong>
+														 $10
+													</p>
+													<p>
+														<strong>Location:</strong>
+														 31 Great Smith Street, London, United Kingdom
+													</p>
+																									  
+													
+													<p>&nbsp;</p>
+													<a class="button red large" href="#">Buy Ticket</a>
+													<a class="button grey large" href="single-event.html">Discover More</a>
+													
+												</div>
+											</div>
+											<!-- Secoend Event Details -->	
+										</div>
+									</div>
+								</div>
+								<nav class="prev">
+									<a  href="#"><i class="fa fa-chevron-down fa-2x"></i></a>
+								</nav>
+								<nav class="next">
+									<a  href="#"><i class="fa fa-chevron-up fa-2x"></i></a>
+								</nav>
+							</div>
+							<!-- /Events Details -->	
+						</div>
+					</div>
+					<!-- /Events SLIDE -->	
+					<!-- CONTACTS SLIDE -->		
+					<div class="slide" data-anchor="contact" id="contact">
+						<div class="content-wrapper ">
+							<!-- CONTACT FORM -->
+							<div class="content-container">
+								<div class="contact-form-wrapper dark" >
+									<div class="result"></div>
+									<form id="contact_form" action="http://demos.creativepixel.ir/" method="post" onsubmit="return false;" class=" contact-form" >
+										<div class="row nopadding">
+											<input placeholder=" Name" type="text"  name="name" id="name" class="text-input halfwidth" >
+											<input placeholder=" Email" type="email"  name="email" class="text-input halfwidth">
+										</div>
+										<div class="row nopadding">
+											<input placeholder=" Subject" type="text"  name="subject" class="text-input fullwidth">
+										</div>
+										<div class="row nopadding">
+											<textarea  placeholder=" message" name="message" class="mk-textarea fullwidth"></textarea>
+										</div>
+										<div class="row fullwidth captcha-form nopadding">
+											<input placeholder=" Captcha" type="text" name="captcha" class=" text-input fullwidth"  autocomplete="off">
+											<div class="captcha-block">
+												<img  height="70" width="200" src="php/captcha.png" class="captcha-image" alt="captcha txt">
+												<a href="#" class="captcha-change-image">Not readable?<br>Change text.</a>
+											</div>
+										</div>
+										<div class="row nopadding">
+											<button name="submit" type="submit"  id="submit_btn" class="fullwidth contact-outline-submit">Submit</button>
+										</div>
+									</form>
+								</div>
+							</div>
+							<!-- /CONTACT FORM -->
+						</div>
+						<!-- Contact Details -->
+						<div class="content-wrapper fixed left">
+							<div class="fullheight fullwidth vcenter-wrapper" >
+								<div class="fullheight vcenter-container" >
+									<div class=" fullheight imgLiquid" >
+										<!-- Background Image -->
+										<img alt="image" src="images/tweetbg2.jpg" />
+										<!-- /Background Image -->
+										<!-- Contact Details Content -->
+										<div class="box-wrapper " data-bg-color="#FFF">
+											<div class="box-info">
+												<h2 class="heading">Get in Touch</h2>
+												<ul class="list-unstyled">
+													<li>
+														<strong>Email:</strong>
+														 info@creativepixel.ir
+													</li>
+													<li>
+														<strong>Phone:</strong>
+														 1-524-252-102	
+													</li>
+													<li>
+														<strong>Location:</strong>
+														 31 Great Smith Street, London, United Kingdom                                 
+													</li>
+												</ul>
+											</div>
+										</div>
+										<!-- /Contact Details Content -->
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /Contact Details -->
+					</div>
+					<!-- /Contacts SLIDE -->	
+				</div>
+				<!-- /Main SECTION -->	
+			</div>
+		</div>
+		<!-- Scripts -->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>	
+		<script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+		<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+		<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+		<script type="text/javascript" src="js/jquery.countdown.min.js"></script>	
+		<script type="text/javascript" src="js/jquery.mb.YTPlayer.js"></script>
+		<script type="text/javascript" src="js/classie.js"></script>
+		<script type="text/javascript" src="js/tweetie.min.js"></script>
+		<script type="text/javascript" src="js/cbpSplitLayout.js"></script>
+		<script type="text/javascript" src="js/EasePack.min.js"></script>
+		<script type="text/javascript" src="js/jplayer.playlist.min.js"></script>
+		<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+		<script type="text/javascript" src="js/jquery.parallaxify.min.js"></script>
+		<script type="text/javascript" src="js/imagelightbox.min.js"></script>
+		<script type="text/javascript" src="js/jquery.dcjqaccordion.2.7.min.js"></script>
+		<script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+		<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+		<script type="text/javascript" src="js/imgLiquid-min.js"></script>
+		<script type="text/javascript" src="js/photostack.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/custom.js"></script>
+		<script  type="text/javascript">
+			$(window).load(function(){
+				$(".imgLiquid").imgLiquid();
+				$('.preloader').fadeOut(1000);
+			}); 
+		</script>
+	</body>
+</html>
