@@ -4,7 +4,7 @@
 </head>
 
 <body>
-  <form action="/testform/submit.php" method="POST">
+  <form action="/banners/testform/submit.php" method="POST">
     <input name="email" placeholder="Email"><br>
     <input name="name" placeholder="Имя"><br>
     <input name="phone" placeholder="Телефон"><br>

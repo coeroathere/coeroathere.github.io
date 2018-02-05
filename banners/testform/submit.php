@@ -15,11 +15,11 @@ if (!empty($_POST['name']) AND !empty($_POST['email']) AND !empty($_POST['messag
     $letter .="\nСообщение: ".$_POST['message'];
     
     if (mail("doathere@yandex.com", $theme, $letter, $headers)){
-      header("Location: /testform/thankyou.php");
+      header("Location: /banners/testform/thankyou.php");
     } else {
-      header("Location: /testform");
+      header("Location: /banners/testform");
     }  
               
 } else {
-  header("Location: /testform");
+  header("Location: /banners/testform");
 }
