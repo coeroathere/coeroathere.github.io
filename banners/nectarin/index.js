@@ -145,35 +145,35 @@ p.nominalBounds = new cjs.Rectangle(-429.7,-107.6,859.4,186.5);
 	this.text.lineHeight = 15;
 	this.text.lineWidth = 46;
 	this.text.parent = this;
-	this.text.setTransform(323.7,-56.7);
+	this.text.setTransform(322,-56.7);
 
 	this.text_1 = new cjs.Text("РИАННА", "14px 'DINCondensedC'", "#FFFFFF");
 	this.text_1.textAlign = "right";
 	this.text_1.lineHeight = 15;
 	this.text_1.lineWidth = 53;
 	this.text_1.parent = this;
-	this.text_1.setTransform(265.3,-41.3);
+	this.text_1.setTransform(268.2,-41.3);
 
 	this.text_2 = new cjs.Text("АКВАФИНА", "14px 'DINCondensedC'", "#FFFFFF");
 	this.text_2.textAlign = "right";
 	this.text_2.lineHeight = 15;
-	this.text_2.lineWidth = 108;
+	this.text_2.lineWidth = 60;
 	this.text_2.parent = this;
-	this.text_2.setTransform(208.7,-34.7);
+	this.text_2.setTransform(207.1,-34.7);
 
 	this.text_3 = new cjs.Text("САРА\nПОЛСОН", "18px 'DINCondensedC'", "#FFFFFF");
 	this.text_3.textAlign = "right";
 	this.text_3.lineHeight = 18;
 	this.text_3.lineWidth = 50;
 	this.text_3.parent = this;
-	this.text_3.setTransform(130.4,-27);
+	this.text_3.setTransform(138,-27);
 
 	this.text_4 = new cjs.Text("МИНДИ\nКЕЙЛИНГ", "16px 'DINCondensedC'", "#FFFFFF");
 	this.text_4.textAlign = "right";
 	this.text_4.lineHeight = 16;
 	this.text_4.lineWidth = 66;
 	this.text_4.parent = this;
-	this.text_4.setTransform(61.3,-13.8);
+	this.text_4.setTransform(56.5,-13.8);
 
 	this.text_5 = new cjs.Text("ЭНН\nХЭТЭУЭЙ", "18px 'DINCondensedC'", "#FFFFFF");
 	this.text_5.textAlign = "right";
@@ -187,19 +187,19 @@ p.nominalBounds = new cjs.Rectangle(-429.7,-107.6,859.4,186.5);
 	this.text_6.lineHeight = 18;
 	this.text_6.lineWidth = 70;
 	this.text_6.parent = this;
-	this.text_6.setTransform(-146.3,5.6);
+	this.text_6.setTransform(-139.5,5.6);
 
 	this.text_7 = new cjs.Text("САНДРА\nБУЛЛОК", "18px 'DINCondensedC'", "#FFFFFF");
 	this.text_7.textAlign = "right";
 	this.text_7.lineHeight = 18;
 	this.text_7.lineWidth = 65;
 	this.text_7.parent = this;
-	this.text_7.setTransform(-258.5,22.2);
+	this.text_7.setTransform(-252.3,22.2);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.text_7},{t:this.text_6},{t:this.text_5},{t:this.text_4},{t:this.text_3},{t:this.text_2},{t:this.text_1},{t:this.text}]}).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-325.6,-58.7,651.3,117.4);
+p.nominalBounds = new cjs.Rectangle(-319.5,-58.7,643.5,117.4);
 
 
 (lib.Символ4 = function(mode,startPosition,loop) {
