@@ -684,8 +684,9 @@ p.nominalBounds = new cjs.Rectangle(-94.2,-35.3,168,80);
 	this.instance_6 = new lib.Символ1("synched",0);
 	this.instance_6.parent = this;
 	this.instance_6.setTransform(83,-156);
+	this.instance_6.alpha = 0;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_6).to({y:92.3},9,cjs.Ease.cubicOut).to({startPosition:0},14).to({startPosition:0},48).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_6).to({y:92.3,alpha:1},9,cjs.Ease.cubicOut).to({startPosition:0},14).to({startPosition:0},48).wait(1));
 
 	// Слой 4 copy 9
 	this.instance_7 = new lib.Анимация25("synched",0);
